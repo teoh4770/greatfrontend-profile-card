@@ -10,52 +10,41 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
   <link rel="icon" href="img/favicon.ico" sizes="any" />
-  <link href="src/style/style.css" rel="stylesheet">
+  <link href="src/style.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="src/index.js" defer></script>
 </head>
 
 <body class="bg-red-100">
   <div class="pt-[12.5rem] pb-[8.75rem]">
     <article class="profile-card bg-white rounded-lg shadow max-w-[21.25rem] mx-auto p-[1.0938rem]">
-      <div class="profile-card__details grid gap-6 text-center">
-        <img class="flex mx-auto w-16 aspect-square rounded-full" src="src/img/profile.png" alt="">
-        <div class="grid gap-1">
-          <h3 class="text-neutral-900 text-xl font-medium">Sarah Dole</h3>
-          <p class="text-neutral-600 text-sm">Front End Engineer @ Microsoft</p>
-        </div>
+      <div class="profile-card__details text-center grid gap-6">
+        <header class="grid gap-6">
+          <img class="flex mx-auto w-16 aspect-square rounded-full" src="src/img/profile.png" alt="">
+          <div class="grid gap-1">
+            <h3 class="text-neutral-900 text-xl font-medium">Sarah Dole</h3>
+            <p class="text-neutral-600 text-sm">Front End Engineer @ Microsoft</p>
+          </div>
+        </header>
         <p class="text-neutral-600">I turn coffee into bugs which are fixed by someone else. Certified Stack Overflow
           and
           ChatGPT developer.</p>
       </div>
       <div class="profile-card__actions mt-10 grid gap-6">
-        <button type="button"
-          class="cta w-full text-center bg-indigo-700 text-white font-medium py-[0.625rem] rounded-md">Contact
-          me</button>
+        <custom-button buttonText="Contact me" variant="primary" size="lg" full></custom-button>
         <footer>
           <ul class="profile-card__socials flex justify-center gap-4">
             <li class="profile-card__social">
-              <a href="#">
-                <img class="p-2 rounded-lg" src="src/img/github.svg" alt="github icon"
-                  aria-label="link to Sarah's GitHub">
-              </a>
+              <custom-button variant="tertiary" iconOnly iconType="github"></custom-button>
             </li>
             <li class="profile-card__social">
-              <a href="#">
-                <img class="p-2 rounded-lg" src="src/img/linkedin.svg" alt="linkedin icon"
-                  aria-label="link to Sarah's LinkedIn">
-              </a>
+              <custom-button variant="tertiary" iconOnly iconType="linkedin"></custom-button>
             </li>
             <li class="profile-card__social">
-              <a href="#">
-                <img class="p-2 rounded-lg" src="src/img/instagram.svg" alt="instagram icon"
-                  aria-label="link to Sarah's Instagram">
-              </a>
+              <custom-button variant="tertiary" iconOnly iconType="instagram"></custom-button>
             </li>
             <li class="profile-card__social">
-              <a href="#">
-                <img class="p-2 rounded-lg" src="src/img/twitter.svg" alt="twitter icon"
-                  aria-label="link to Sarah's Twitter">
-              </a>
+              <custom-button variant="tertiary" iconOnly iconType="twitter"></custom-button>
             </li>
           </ul>
         </footer>
@@ -66,8 +55,14 @@
   <!-- Attribute this challenge to yourself! -->
   <div class="credits">
     A challenge by
-    <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank">GreatFrontEnd Projects</a>. Built by
-    <a href="https://www.greatfrontend.com/u/your_username" target="_blank">Your Name</a>.
+    <a href="https://www.greatfrontend.com/projects?ref=challenges" target="_blank">
+      GreatFrontEnd Projects
+    </a>
+    . Built by
+    <a href="https://www.greatfrontend.com/projects/u/teoh4770" target="_blank">
+      Chee Kian Teoh
+    </a>
+    .
   </div>
 </body>
 
